@@ -1,0 +1,370 @@
+/*Nav*/
+.header {
+  position: relative;
+  z-index: 999;
+}
+
+.header-nav {
+  position: absolute;
+  width: 100%;
+  height: 8rem;
+  align-items: center;
+  padding: 0 4.8rem;
+  background: #acaeb6;
+  opacity: 0.7;
+}
+
+.header-nav-list {
+  height: 100%;
+  display: flex;
+  gap: 4.8rem;
+  list-style: none;
+  align-items: center;
+  justify-content: end;
+}
+
+.header-nav-link:visited,
+.header-nav-link:link {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.header-nav-link:hover,
+.header-nav-link:active {
+  color: #eac204;
+}
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .header-nav {
+  background: #ffffff;
+  opacity: 1;
+}
+.sticky .header-nav-link {
+  color: #14181b;
+}
+.sticky .header-nav-link:hover,
+.sticky .header-nav-link:active {
+  color: #eac204;
+}
+
+/*Home*/
+.home {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-home {
+  padding-top: 15rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.home-icon-box ul {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+}
+.home-link {
+  font-size: 4rem;
+  color: #ffffff;
+  text-decoration: none;
+  border: solid 1px #ffffff;
+  border-radius: 50%;
+  padding: 1rem;
+  transition: all 0.3s;
+}
+
+.btn-contact {
+  margin-top: 6rem;
+  color: #ffffff;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  border: solid 1px #ffffff;
+  border-radius: 5px;
+  padding: 1.5rem 2.5rem;
+  transition: all 0.3s;
+}
+
+.home-link:hover,
+.home-link:active,
+.btn-contact:hover,
+.btn-contact:active {
+  background: #ffffff;
+  color: #eac204;
+}
+.home-background-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/william-daigneault-Cd84YdL9px8-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*about*/
+.section-about,
+.section-skills,
+.section-projects,
+.section-contact {
+  width: 100%;
+  padding: 13rem 0;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-contents {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 7rem;
+  padding-top: 5rem;
+  position: relative;
+}
+
+.about-contents::after {
+  content: "";
+  background: #eac204;
+  position: absolute;
+  bottom: 25%;
+  left: 45%;
+  top: 0;
+  height: 2px;
+  width: 10%;
+  z-index: 100;
+}
+
+.about-contents img {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 2rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+.about-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #acaeb6;
+}
+/*skills*/
+.section-skills {
+  width: 100%;
+  background: #f7f7f7;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-contents {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 7rem;
+  padding-top: 10rem;
+  position: relative;
+  list-style: none;
+}
+
+.skills-contents::after {
+  content: "";
+  background: #eac204;
+  position: absolute;
+  bottom: 25%;
+  left: 45%;
+  top: 0;
+  height: 2px;
+  width: 10%;
+  z-index: 100;
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  color: #8a8c8d;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-content:hover {
+  filter: invert(57%) sepia(97%) saturate(372%) hue-rotate(12deg)
+    brightness(103%) contrast(113%);
+}
+.skill-icon {
+  font-size: 4.8rem;
+}
+.skills-content img {
+  filter: invert(58%) sepia(3%) saturate(168%) hue-rotate(155deg)
+    brightness(95%) contrast(87%);
+  width: 4.8rem;
+}
+
+.skills-content span {
+  padding-top: 1.6rem;
+  font-size: 1.6rem;
+}
+
+/*projects*/
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-contents {
+  width: 100%;
+  padding-top: 5rem;
+  position: relative;
+}
+
+.projects-contents::after {
+  content: "";
+  background: #eac204;
+  position: absolute;
+  bottom: 25%;
+  left: 45%;
+  top: 0;
+  height: 2px;
+  width: 10%;
+  z-index: 100;
+}
+/*contact*/
+.section-contact {
+  background: #eac204;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.contact-contents {
+  width: 100%;
+  padding-top: 5rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 7rem;
+}
+
+.contact-contents::after {
+  content: "";
+  background: #ffffff;
+  position: absolute;
+  bottom: 25%;
+  left: 45%;
+  top: 0;
+  height: 2px;
+  width: 10%;
+  z-index: 100;
+}
+
+.contact-heading {
+  margin-bottom: 1.6rem;
+  font-size: 2.4rem;
+  font-weight: 200;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.contact-form form {
+  width: 80%;
+}
+.contact-form label {
+  font-size: 1.6rem;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  height: 3rem;
+  color: inherit;
+  border: none;
+  background: #ffffff;
+  margin-bottom: 3rem;
+  margin-top: 0.5rem;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  padding: 1rem;
+  color: #acaeb6;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+}
+
+.contact-form textarea {
+  height: 15rem;
+  resize: none;
+}
+
+.btn-contact-submit {
+  color: #ffffff;
+  background: inherit;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  border: solid 1.5px #ffffff;
+  border-radius: 5px;
+  padding: 1.2rem 2.2rem;
+  transition: all 0.3s;
+}
+
+.btn-contact-submit:hover {
+  color: #eac204;
+  background: #ffffff;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info-desc {
+  display: flex;
+  font-size: 1.6rem;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info-icon {
+  font-size: 2rem;
+}
