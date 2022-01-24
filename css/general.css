@@ -10,6 +10,7 @@
 
 #EAC204
 #eebb00
+#f7f5b1
 #DBB201
 
 - Font sizes (px)
@@ -86,4 +87,12 @@ main {
   font-weight: 400;
   margin-bottom: 3.2rem;
   letter-spacing: 2px;
+}
+.heading-four {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: 2.5px;
+  margin-bottom: 2.2rem;
+  color: #eac204;
 }
