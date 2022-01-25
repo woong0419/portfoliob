@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css">
 
     <script defer src="js/script.js"></script>
     <script
@@ -34,6 +35,12 @@
           <li><a class="header-nav-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
+
+      <button class="btn-mobile">
+        <ion-icon class="btn-mobile-icon" name="menu-outline"></ion-icon>
+        <ion-icon class="btn-mobile-icon" name="close-outline"></ion-icon>
+      </button>
+      
     </header>
     <main>
       <section class="home" id="home">
@@ -139,7 +146,8 @@
       <section class="section-projects" id="projects">
         <div class="container projects">
           <h1 class="heading-three">projects</h1>
-          <div class="projects-contents">
+          
+          <div class="projects-contents laptop">
               <div class="projects-content">
                   <div class="projects-content-img">
                       <img class="content-img-1" src="img/omnifood.PNG" alt="omnifood">
@@ -222,6 +230,87 @@
                 </div>
 
             </div>
+          </div>
+
+          <div class="projects-contents mobile">
+            <div class="slider">
+                <div class="slide slide--1">
+                  <figure class="slide-content">
+                    <div class="slide-content-textbox">
+                      <h1 class="heading-four">Omnifood</h1>
+                      <p class="slide-desc">project description project description project description project description project description project description project description project description project description project description project description </p>
+                      <ul>
+                        <li><ion-icon name="logo-html5"></ion-icon></li>
+                        <li><ion-icon name="logo-css3"></ion-icon></li>
+                      </ul>
+                    </div>
+                    <a href="https://serene-chandrasekhar-eaedea.netlify.app/" target="_blank" class="slide-content-img">
+                      <img src="img/omnifood.PNG" alt="omnifood">
+                    </a>
+                  </figure>
+                </div>
+    
+                <div class="slide slide--2">
+                  <figure class="slide-content">
+                    <div class="slide-content-textbox">
+                      <h1 class="heading-four">Food Recipe</h1>
+                      <p class="slide-desc">project description project description project description project description project description project description project description project description project description project description project description </p>
+                      <ul>
+                        <li><ion-icon name="logo-html5"></ion-icon></li>
+                        <li><ion-icon name="logo-css3"></ion-icon></li>
+                        <li><ion-icon name="logo-javascript"></ion-icon></li>
+                      </ul>
+                    </div>
+                    <a href="https://trusting-rosalind-dbcbbc.netlify.app/" target="_blank" class="slide-content-img">
+                      <img src="img/foodapp.PNG" alt="foodapp">
+                    </a>
+                  </figure>
+                </div>
+    
+                <div class="slide slide--3">
+                  <figure class="slide-content">
+                    <div class="slide-content-textbox">
+                      <h1 class="heading-four">Seneca music</h1>
+                      <p class="slide-desc">project description project description project description project description project description project description project description project description project description project description project description </p>
+                      <ul>
+                        <li><img src="img/4691284_mongodb_icon.svg"></li>
+                        <li><img src="img/express-js-seeklogo.com.svg" alt=""></li>
+                        <li><ion-icon name="logo-angular"></ion-icon></li>
+                        <li><ion-icon name="logo-nodejs"></ion-icon></li>
+                      </ul>
+                    </div>
+                    <a href="https://loving-haibt-4161aa.netlify.app/newReleases" target="_black" class="slide-content-img">
+                      <img src="img/seneca-music.PNG" alt="angular-music">
+                    </a>
+                  </figure>
+                </div>
+    
+                <div class="slide slide--4">
+                  <figure class="slide-content">
+                    <div class="slide-content-textbox">
+                      <h1 class="heading-four">React music</h1>
+                      <p class="slide-desc">project description project description project description project description project description project description project description project description project description project description project description </p>
+                      <ul>
+                        <li><img src="img/4691284_mongodb_icon.svg"></li>
+                        <li><img src="img/express-js-seeklogo.com.svg" alt=""></li>
+                        <li><ion-icon name="logo-react"></ion-icon></li>
+                        <li><ion-icon name="logo-nodejs"></ion-icon></li>
+                      </ul>
+                    </div>
+                    <a href="https://festive-bardeen-8db797.netlify.app/newreleases" target="_black" class="slide-content-img">
+                      <img src="img/react-music.PNG" alt="react-music">
+                    </a>
+                  </figure>
+                </div>
+    
+                <button class="slider__btn slider__btn--left">
+                  <ion-icon name="caret-back-outline"></ion-icon>
+                </button>
+                <button class="slider__btn slider__btn--right">
+                  <ion-icon name="caret-forward-outline"></ion-icon></ion-icon>
+                </button>
+                <div class="dots"></div>
+              </div>
           </div>
         </div>
       </section>

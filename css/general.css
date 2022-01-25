@@ -80,6 +80,7 @@ main {
   font-weight: 100;
   letter-spacing: 2.5px;
   margin-bottom: 6.4rem;
+  text-align: center;
 }
 .heading-three {
   text-transform: uppercase;
